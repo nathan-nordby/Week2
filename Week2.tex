@@ -1,0 +1,175 @@
+\documentclass[conference]{journal}
+
+\title{Asignment Week 2}
+\author{Nathan A. Nordby}
+
+\usepackage{graphicx} %Loading the package 
+\usepackage[space]{grffile} %Loading the package
+\graphicspath{{/Users/Primary_User/Desktop/CS6000/figures/}} %Setting the graphicspath 
+\usepackage{framed}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{hyperref}
+
+%\usepackage{biblatex}
+
+%\addbibresource{references}
+
+
+\begin{document}
+\maketitle
+
+
+
+
+
+\section{Process learning}
+
+This by far was worse than the first week. In learning there was a steep curve figuring out Overleaf, management sources for references (Zot..Mend..) and others, and even tried a web-crawler to try to save time. Long story short: the longest time taker was learning the tools. Thanks to the class notes I was able to reasonably adapt to reading effectively and efficiently a significant number of papers. It is hard to tell how well each of them got an objective look because I found after about 20 minutes of 1-2 minute reads I had to take a break or else I began skipping over key facts due to disinterest. In the end I was able to find a method going between the abstract-conclusion and key figures to do a search in about 30 seconds. This quick search allowed me to determine if it was a paper “worth reading” meaning: it was applicable to my current topic and may have useful direct/indirect contributing research toward that topic. GitHUB by far is the easiest and cleanest user interface with simple control flowt without hickup. I had zotero and many other programs crash numerous times when I tried to do control paths that likely were not considered in there design.
+
+\section{Scan 8+ papers}
+\subsection{Fast, Lean, and Accurate: Modeling Password Guessability Using Neural Networks \cite{melicher_fast_2016}}
+(Category:	vulnerability of human generated passwords
+(Context:	usenix, multiple papers on password guessing
+(Contributions:	created neural network to guess human passwords, created counter java code to help check passwords being created
+(Credible:	moderatly, lots of questionable repositoriery references
+(Care:	NA
+(Cost:	2 hours
+
+\subsection{Post-quantum key exchange – a new hope* \cite{alkim_post-quantum_2016}}
+(Category:	crypto vulnerability due to quantum computing
+(Context:	usenix, significant other authors and history
+(Contributions:	Create a lattice solution cipher to protect against quantum computing
+(Credible:	Very credible, significant horizonontal work and research
+(Care:	published and open on GIT
+(Cost:	2-4 hours
+
+\subsection{FlowFence: Practical Data Protection for Emerging IoT Application Frameworks \cite{fernandes_flowfence:_2016}}
+(Category:	expose vulnerability in the data flow of IoT devices through the internet
+(Context:	usenix, information flow security
+(Contributions:	create a softare design to help keep flow information secure between devices, and keep them arbitary and prevent direct connection through a third party connection
+(Credible:	Very credible, significant horizonontal work and research
+(Care:	published and signficant references, already a lot of work done in this area
+(Cost:	2-4 hours
+
+\subsection{DROWN: Breaking TLS using SSLv2 \cite{aviram_drown:_2016}}
+(Category:	expose vulnerability in known and extinct sslv2
+(Context:	usenix, information flow security
+(Contributions:	create an attack to use known vulnerabilities in SSLv2 to break TLS
+(Credible:	very credible based on known vulnerabilities
+(Care:	Pretty good demonstration of what any remaining servers need to dump sslv2 now!
+(Cost:	2 hours
+
+\subsection{fTPM: A Software-only Implementation of a TPM Chip \cite{raj_ftpm:_2016}}
+(Category:	Cryptography replace TPM with software	
+(Context:	usenix, information flow security	
+(Contributions:	create a software version of TPM based on fuses on board processors, Device Key, and UUID	
+(Credible:	credible	
+(Care:	keep much of the work confidential but appear accomplish the same effect as TPM	
+(Cost:	4	hours
+
+\subsection{Sanctum: Minimal Hardware Extensions for Strong Software Isolation \cite{costan_sanctum:_2016}}
+(Category:	Cryptography replace TPM with software	
+(Context:	usenix, information flow security	
+(Contributions:	Physically modify an existing chip to introdue TPM	
+(Credible:	Hard to tell not my area of expertise they physically modify an existing chip	
+(Care:	Unknown	
+(Cost:	2	hours
+
+\subsection{The Million-Key Question – Investigating the Origins of RSA Public Keys \cite{svenda_million-key_2016}}
+(Category:	Crypotgraphy finding out if RSA key pair generation is trully uniform primes distributed with different vendors/libraries	
+(Context:	usenix, information flow security	
+(Contributions:	They demosnstrate that some specicially one card vendor does not proerply unifomrly distribute their findings of primes	
+(Credible:	Credible based on exsiting crypto and signifcant search space	
+(Care:	Out to get some attention since they kind of invalidate one of the card companies random key pair generation	
+(Cost:	2	hours
+
+\subsection{Fingerprinting Electronic Control Units for Vehicle Intrusion Detection \cite{cho_fingerprinting_2016}}
+(Category:	ECU protection of new vulnerabilities in automotive vehicles	
+(Context:	usenix, information flow security	
+(Contributions:	The created a custom intrusion detection system based on timing and clocks of the vehicle	
+(Credible:	yes	
+(Care:	Yes, will provide another possible solution to prevent hijacking of an ecu.	
+(Cost:	2	hours
+
+\subsection{Lock It and Still Lose It – On the (In)Security of Automotive Remote Keyless Entry Systems \cite{garcia_lock_2016}}
+(Category:	Vulnerability analysis of RKE and vehicular entry systems
+(Context:	Jam Intercept and Replay Attack against Rolling Code Key Fob Entry Systems using RTL-SDR Comprehensive experimental analyses of automotive attack aces,Breaking the security of physical devices, Vulnerabilities of Crypotography in RKEs for vehicles
+(Contributions:	Provide several methods for automotive industry to move forward with new measures
+(Credible:	Very Crecidble Usenix conference, responsible disclosure worked with manufactures and specific parts
+(Care:	Responsible Dislosure, and automakers already acting on the data
+(Cost:	1-2 hours
+
+
+\section{Critical/Creative Read}
+
+\subsection{Lock It and Still Lose It – On the (In)Security of Automotive Remote Keyless Entry Systems \cite{garcia_lock_2016}}
+			
+3 Types of remote systems							
+RKE	button press						
+Imobolizer	may or may not be linked with RKE						
+PKES	Passive Remote Keyless Entry, within certain range automatically challenge and response						
+	?-2005	2006-2012	2013	2016			
+RKE	TXI-DTS-40	NXP HITAG-2	Megamos Crypto trans				
+Immobilizer							
+PKES							
+							
+TXI DTS-40	40 bit key	broken by exhaustive key search space of 40 bit key nto the 40 key search					
+NXP HITAG-2	48 bit key broken in 5 minutes with 						
+Megamos Crypto trans	96 bit key broken in days to seconds using Time-Memory Tradeoff (TMTO) using crypto analytics brings key size down to 57 bits						
+							
+RKE	PKES	315	433	868	MHz		
+Immobilizers		125	MHz				
+Some using infrared instead of RF							
+							
+All attacks require some initial interaction with user key. PKES more vulnerable because pasively initiated conversation can occur at any time vs. RKE needing button press. Once attacker has key examples can use to crypto analyze and break and create key for entry							
+Black market devices available for sale to break PKES							
+lock and unlock commands require different rolling code							
+Used HackRF, USRP, RTL-sdr DVB-T USB sticks and RF modules all costing 40 dollars.							
+Most use ASK or FSK with Machestor or Pulse-width encoding 1-20 kbits/s							
+Authenticates using UID and countor or Message Authentication Code (MAC)							
+Did not validate or determine exactly what vehcles the vulnerability applies to							
+Hard to reverse engineer microcontrolers in RKEs, but possible to reverse engineer RKE system based on ECUs							
+Using widely available, standard programming							
+tools for automotive processors, we were able to ob							
+tain firmware dumps for all studied ECUs. We then							
+located and recovered the cryptographic algorithms							
+by performing static analysis of the firmware im							
+age, searching amongst others for constants used in							
+common symmetric ciphers and common patterns							
+of such ciphers (e.g., table lookups, sequences of bit							
+wise operations). The results of this process are de							
+							
+							
+VW rolling code only permutates and XORs the ID and uses a LFSR to determine the rolling code (easitly rellicatable and basically little to no crypto)							
+BLUF: VW uses a few master keys for all their cars world wide so all vehicles are susceptiable to easy teheft by electronic means	
+
+\subsection{Fingerprinting Electronic Control Units for Vehicle Intrusion Detection \cite{cho_fingerprinting_2016}}
+						
+Reasonable introduction give good explanation for need of the problem	
+First large assumption is scalling adversaries as week and strong, but seems reasonable for purposes of discussion	
+Clock offset calculations is sofisticated but seems reasonable	
+Clock offset for some vehicles has verly little or similar drift but still drift	
+Paper addreses simliar clock offsets but from different ECUS in 	
+Paper does a good job evaluating false positive scenario since it could cause unecesary loss of use of vehicle	
+Paper does not run many tests for false positives	
+Test set of vehicles is very limited to Honda, Toyota, Dodge Ram	
+There maybe many other ways to false positive CIDS and discussion on how to protect CIDS is very limited	
+
+\subsection{fTPM: A Software-only Implementation of a TPM Chip \cite{raj_ftpm:_2016}}
+Section 13 in related work is very helpfuland gives a great baseline on some industry standards that are even being looked at adopted globally for trusted runtime execution	
+Somewhat of a survey paper the researchers appear not to provide an actuall tested solution	
+Only discuss two chip TPM implementations ARM and Intell, but seems reasonable since these are the main producers. 	
+Does not give background or info on how much these two chips with on-board tpm are in production or currently used.	
+Thesres is a limited test set of 4 devices and they are kept confidential	
+Authors do an extensive job discussing the reasons behind the basis rules for their fTPM and upcomign TPM 2.0	
+Authors do a good job comparing their performance to that of platform based TPMs.	
+Authors do not bound how many primes are usually searched for when conducting crypto search for primes	
+
+\nocite{*}			
+\bibliography{/Users/Primary_User/Desktop/CS6000/Week_2/references}
+\bibliographystyle{IEEEtran}
+
+%\printbibliography
+\end{document}
